@@ -1,0 +1,12 @@
+// ScrollReveal Animations
+//ScrollReveal().reveal('.hero-section', { duration: 1000, origin: 'top', distance: '50px' });
+//ScrollReveal().reveal('.about-section', { duration: 1000, origin: 'bottom', distance: '50px' });
+//ScrollReveal().reveal('.skills-section', { duration: 1000, origin: 'left', distance: '50px' });
+//ScrollReveal().reveal('.contact-section', { duration: 1000, origin: 'right', distance: '50px' });
+
+// Parallax Scrolling
+//const parallax = document.querySelector('.background-animate');
+//indow.addEventListener('scroll', () =>  {
+    //let offset = window.pageYOffset;
+    //parallax.style.backgroundPositionY = offset * 0.7 + 'px';
+//});
