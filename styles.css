@@ -67,6 +67,10 @@ nav a:hover {
     padding: 20px;
 }
 
+.hero-list {
+    list-style-type: none; 
+    padding: 0;
+}
 .profile-image {
     height: 1000px;
     size: 100px;
@@ -114,10 +118,16 @@ p {
 }
 
 /* Images */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically if needed */
+    flex-direction: row; /* Aligns images in a row */
+}
 
-.about-image {
+.about-image1, .about-image2, .about-image3 {
     border-radius: 0%;
-    margin: auto;
+    margin: auto; /* Optional, to add space around images */
     height: 40%;
     width: 20%;
 }
@@ -125,7 +135,7 @@ p {
 /* About Section */
 .about {
     background-color: white;
-    padding: 80px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -200,7 +210,7 @@ p {
  
 .skill-category h3 {
     margin-bottom: 1.5rem;
-    color: #8400ff;
+    color:  #1f2937;;
 }
  
 /* Skill Bars */
@@ -269,6 +279,42 @@ p {
     font-size: 2.5rem;
 }
 
+/* Social Links */
+.social-links {
+    margin-top: 2rem;
+}
+ 
+.social-links h3 {
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+ 
+.social-links a {
+    margin: 0 10px;
+}
+ 
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+ 
+.social-links img:hover {
+    transform: scale(1.1);
+}
+ 
+.social-links a {
+    margin-right: 10px;
+}
+ 
+.social-links img {
+    width: 40px;
+    height: 40px;
+}
+ 
+.contact-info p {
+    margin: 20px 30px;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {

@@ -1,0 +1,35 @@
+# Personal Portfolio Website
+
+## Description
+This is a personal portfolio website showcasing my skills, projects, and experiences as a software developer. 
+It features a clean and responsive design, making it accessible on both desktop and mobile devices.
+
+## Technologies Used
+- HTML5
+- CSS3
+- Font Awesome for icons
+- Responsive Design (Flexbox and Grid)
+
+## Installation Instructions
+1. Clone the repository:
+   git clone https://github.com/KhanyiCodes
+
+2. Navigate to the project directory:
+    cd http://127.0.0.1:5500/index.html
+
+3. Usage:
+    Open the index.html file in any web browser. 
+    You can navigate through the different sections, including Home, About, Skills, and Contact, using the navigation menu.
+
+4. File Structure:
+    /personal-portfolio
+        │
+        ├── index.html        # Main HTML file
+        ├── styles.css       # CSS file for styling
+        └── images/          # Directory for images and logos
+
+## Features: 
+    Smooth scrolling navigation
+    Responsive design
+    Downloadable resume/CV
+    Links to social media profiles (GitHub, LinkedIn)
