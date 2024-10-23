@@ -344,12 +344,6 @@ p {
 .bar-inner.bar-20 { width: 20%; }
 .bar-inner.bar-10 { width: 10%; }
 
-@media (max-width: 768px) {
-    .skills-categories {
-        grid-template-columns: 1fr; /* Single column on small screens */
-    }
-}
-
 /* Contact Section */
 .contact {
     background-color: white;
