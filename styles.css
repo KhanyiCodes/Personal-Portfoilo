@@ -278,57 +278,28 @@ p {
     margin-bottom: 20px;
 }
 
-.skills h3 {
-    font-size: 2rem;
-    margin-top: 20px;
-}
-
-.skills
-
-/* Skills Section */
-.skills {
-    padding: 4rem 0;
-}
- 
 .skills-categories {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Space between categories */
+    padding: 20px;
 }
- 
+
 .skill-category {
     background: #fff;
     padding: 20px;
-    margin: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    min-width: 250px;
     transition: transform 0.3s;
 }
 
-.skill-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
-    gap: 15px; /* Space between items */
-}
- 
 .skill-category:hover {
     transform: translateY(-3px);
 }
- 
+
 .skill-category h3 {
     margin-bottom: 1.5rem;
-    color:  #1f2937;;
-}
- 
-/* Skill Bars */
-.skills-categories {
-    padding: 20px;
-}
-
-.skill-category {
-    margin-bottom: 30px;
+    color: #1f2937;
 }
 
 .skill {
@@ -341,29 +312,26 @@ p {
 }
 
 .skill img {
-    width: 30px; /* Adjust size as needed */
+    width: 30px;
     vertical-align: middle;
 }
-.skill-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
-    gap: 15px; /* Space between items */
-}
+
+/* Skill Bars */
 .bar {
-    width: 100%; /* Full width */
-    height: 20px; /* Height of the bar */
-    background-color: #f0f0f0; /* Background color */
-    border-radius: 10px; /* Rounded corners */
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
     position: relative;
-    overflow: hidden; /* Clip inner bars */
+    overflow: hidden;
 }
 
 .bar-inner {
-    height: 100%; /* Full height */
-    background-color: #4caf50; /* Color of the progress */
-    line-height: 20px; /* Center text vertically */
-    text-align: center; /* Center text horizontally */
-    color: white; /* Text color */
+    height: 100%;
+    background-color: #4caf50;
+    line-height: 20px;
+    text-align: center;
+    color: white;
 }
 
 .bar-inner.bar-90 { width: 90%; }
@@ -376,6 +344,11 @@ p {
 .bar-inner.bar-20 { width: 20%; }
 .bar-inner.bar-10 { width: 10%; }
 
+@media (max-width: 768px) {
+    .skills-categories {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
 
 /* Contact Section */
 .contact {
