@@ -439,7 +439,7 @@ p {
 .chat-container {
     display: none;
     position: fixed;
-    top: 65%;
+    top: 60%;
     right: 20px;
     transform: translateY(-50%);
     width: 300px;
