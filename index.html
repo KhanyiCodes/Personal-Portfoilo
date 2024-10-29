@@ -39,7 +39,7 @@
                 <li>Strong Academic Foundation</li>
                 <li>Problem-Solving Skills</li>
                 <li>Software Proficiency</li>
-                <li>Attention to Detail</li>
+                <li>Attention to Detail</li> 
                 <li>Portfolio Development</li>
             </ul>
             <p class="hashtag">#WomenInTech</p>
@@ -62,16 +62,17 @@
             My education has equipped me with a strong foundation in programming languages, software development principles, 
             and modern development practices. I am passionate about creating innovative solutions that enhance user experiences. 
             During my academic journey, I worked on several projects that honed my abilities in software design, development, 
-            and testing. I am particularly interested in web and mobile application development.In addition to my technical expertise, 
-            I value effective communication and teamwork, believing that the best results come from diverse perspectives.
+            and testing.
         </p>
+        <p>I am particularly interested in web and mobile application development.In addition to my technical expertise, 
+            I value effective communication and teamwork, believing that the best results come from diverse perspectives.</p>
         
         <div class="grid-container">
         <div class="grid-item">
             <h3>My Educational Background:</h3>  
             <ul>
                 <li>Completed Matric/Grade 12 in 2020</li>
-                <li>IT-related qualification - Diploma of Information Technology in Software Development, obtained in June 2024</li>
+                <li>Diploma of Information Technology in Software Development, obtained in June 2024</li>
             </ul>
     
         </div>
@@ -86,7 +87,7 @@
                 <li><a href="files/M885_1_statement.pdf">Software development for enterprise systems</a></li>
             </ul>
         
-        </div>
+        </div> 
 
         <div class="grid-item">
             <h3>My Characteristics:</h3>
@@ -133,7 +134,7 @@
     <section id="skills" class="skills">
         <h2>My Skills</h2>
         <p>As a recent graduate in software development, I possess a solid foundation of technical skills that equip me for a successful career 
-            in the tech industry. My expertise spans various programming languages, databases, frameworks and softwares. I am well-versed in 
+            in the tech industry. <strong>My expertise spans various programming languages, databases, frameworks and softwares.</strong> I am well-versed in 
             both front-end and back-end development, enabling me to create seamless 
             user experiences and robust server-side applications. Familiarity with version control systems, particularly Git, ensures efficient 
             collaboration on projects.</p>
@@ -327,13 +328,48 @@
             <a href="mailto:rebaone02khanyi@gmail.com" class="btn">Contact Me</a>
         </div>  
 
-    <!--My socials-->
+        <!--My socials-->
+    
     <div class="social-links">
         <h3>Socials</h3>
         <a href="https://github.com/KhanyiCodes" target="_blank"><img src="images/logos/github.png" alt="GitHub Logo"></a>
         <a href="https://www.linkedin.com/in/rebaone-khanyisile-cynthia-vilakazi-37407528a/" target="_blank"><img src="images/logos/linkedin.png" alt="LinkedIn Logo"></a>
     </div>
+    
     </section>
+    <!--Chatbot-->
+    <section>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="chat-header title">Chatbot</div>
+            <div class="chat-header close-btn" onclick="toggleChat()">X</div>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div id="chat-messages">
+                <div class="bot-message">
+                    Hello! Welcome to Rebaone's portfolio. What can I help you find? 
+                </div>
+                <div class="bot-message">
+                    <button class="option-button" onclick="sendMessage('Home')">Home</button>
+                    <button class="option-button" onclick="sendMessage('About')">About Me</button>
+                    <button class="option-button" onclick="sendMessage('Skills')">Skills</button>
+                    <button class="option-button" onclick="sendMessage('Contact')">Contact Me</button>
+                </div>
+            </div>
 
+            <div class="typing-indicator" id="typing-indicator" style="display: none;">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="input-field" class="input-field" placeholder="Type a message..." />
+            <button class="send-btn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <div class="chat-toggle" onclick="toggleChat()">💬</div>
+    </section>
+    
 </body>
 </html>
