@@ -328,8 +328,17 @@
             <a href="mailto:rebaone02khanyi@gmail.com" class="btn">Contact Me</a>
         </div>  
 
-
+        <!--My socials-->
+    
+    <div class="social-links">
+        <h3>Socials</h3>
+        <a href="https://github.com/KhanyiCodes" target="_blank"><img src="images/logos/github.png" alt="GitHub Logo"></a>
+        <a href="https://www.linkedin.com/in/rebaone-khanyisile-cynthia-vilakazi-37407528a/" target="_blank"><img src="images/logos/linkedin.png" alt="LinkedIn Logo"></a>
+    </div>
+    
+    </section>
     <!--Chatbot-->
+    <section>
     <div class="chat-container">
         <div class="chat-header">
             <div class="chat-header title">Chatbot</div>
@@ -337,7 +346,15 @@
         </div>
         <div class="chat-body" id="chat-body">
             <div id="chat-messages">
-
+                <div class="bot-message">
+                    Hello! Welcome to Rebaone's portfolio. What can I help you find? 
+                </div>
+                <div class="bot-message">
+                    <button class="option-button" onclick="sendMessage('Home')">Home</button>
+                    <button class="option-button" onclick="sendMessage('About')">About Me</button>
+                    <button class="option-button" onclick="sendMessage('Skills')">Skills</button>
+                    <button class="option-button" onclick="sendMessage('Contact')">Contact Me</button>
+                </div>
             </div>
 
             <div class="typing-indicator" id="typing-indicator" style="display: none;">
@@ -352,14 +369,7 @@
         </div>
     </div>
     <div class="chat-toggle" onclick="toggleChat()">💬</div>
-    
-    <!--My socials-->
-    <div class="social-links">
-        <h3>Socials</h3>
-        <a href="https://github.com/KhanyiCodes" target="_blank"><img src="images/logos/github.png" alt="GitHub Logo"></a>
-        <a href="https://www.linkedin.com/in/rebaone-khanyisile-cynthia-vilakazi-37407528a/" target="_blank"><img src="images/logos/linkedin.png" alt="LinkedIn Logo"></a>
-    </div>
     </section>
-
+    
 </body>
 </html>

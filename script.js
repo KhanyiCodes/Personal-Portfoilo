@@ -34,7 +34,7 @@ function simulateBotResponse() {
         typingIndicator.style.display = 'none';
         const botMessage = "I'm here to help!"; // Replace with actual bot response logic
         displayMessage(botMessage, 'bot');
-    }, 2000); // Simulates a delay for bot response
+    }, 1000); // Simulates a delay for bot response
 }
 
 // Send message on Enter key press
@@ -42,4 +42,13 @@ document.getElementById('input-field').addEventListener('keypress', function (e)
     if (e.key === 'Enter') {
         sendMessage();
     }
-});
+})
+
+//More funtions
+
+
+
+
+
+
+;

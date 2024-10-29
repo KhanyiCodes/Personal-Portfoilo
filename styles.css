@@ -437,8 +437,9 @@ p {
 
 /*Chatbot*/
 .chat-container {
+    display: none;
     position: fixed;
-    top: 50%;
+    top: 65%;
     right: 20px;
     transform: translateY(-50%);
     width: 300px;
@@ -447,7 +448,6 @@ p {
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none; /* Initially hidden */
 }
 
 .chat-header {
@@ -469,8 +469,6 @@ p {
 }
 
 .chat-body {
-    max-height: 300px; /* Limit height for scrolling */
-    overflow-y: auto;
     padding-top: 10px;
 }
 
@@ -481,12 +479,12 @@ p {
 }
 
 .user-message {
-    background-color: #e0e0e0;
+    background-color: #f8eeee;
     text-align: right;
 }
 
 .bot-message {
-    background-color: #DD8EA4;
+    background-color: #ffffff;
     text-align: left;
 }
 
@@ -506,6 +504,12 @@ p {
     animation: typing-blink 1s infinite;
 }
 
+@keyframes typing-blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
 .input-container {
     display: flex;
     align-items: center;
@@ -522,13 +526,23 @@ p {
 .send-btn {
     padding: 10px;
     margin-left: 5px;
-    background-color: #3498db;
+    background-color: #064169;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
+.option-button {
+    background-color: #05294d; 
+    color: white; 
+    padding: 10px 15px; 
+    margin: 5px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-decoration: none; 
+}
 .chat-toggle {
     position: fixed;
     bottom: 20px; /* Position 20px from the bottom */
