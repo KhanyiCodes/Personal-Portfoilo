@@ -582,12 +582,7 @@ p {
     }
 }
 /* Base responsive layout */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
 
 /* Responsive header */
 @media screen and (max-width: 768px) {
@@ -596,15 +591,17 @@ p {
     }
     
     nav {
-        margin-top: 1rem;
+        margin-top: 5rem;
+        display: flex; /* Use flexbox for horizontal layout */
+        justify-content: center; /* Center the items */
+        flex-wrap: nowrap; /* Prevent wrapping to a new line */
     }
     
     nav a {
-        padding: 0.5rem;
-        display: block;
+        padding: 0.5rem 0.5rem; /* Add horizontal padding for spacing */
+        display: inline-block; /* Ensure links are inline */
     }
 }
-
 /* Responsive hero section */
 @media screen and (max-width: 992px) {
     .hero {

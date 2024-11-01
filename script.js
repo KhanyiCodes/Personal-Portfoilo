@@ -40,7 +40,7 @@ function simulateBotResponse() {
 
 //More funtions
 const keywords = [
-    "hello", "Hello", "hi", "Hi", "current", "certifications", "characteristics",
+    "hello", "Hello", "hi", "Hi", "current", "certifications", "characteristics", "github",
     "name", "education", "project", "skills", "about", "location", "contact", "timeline"
 ];
 
@@ -78,8 +78,14 @@ function sendMessage() {
             case "Hi":
                 response = "What would you like to know about Rebaone?";
                 break;
+            case "github":
+                response = "My name is KhanyiCodes on GitHub.";
+                break;
             case "name":
                 response = "My name is Rebaone Vilakazi.";
+                break;
+            case "linkedin":
+                response = "My name is Rebaone Khanyisile Cynthia Vilakazi";
                 break;
             case "education":
                 response = "I have a Diploma of Information Technology in Software Development from Rosebank College"; 
